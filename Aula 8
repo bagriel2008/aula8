@@ -1,0 +1,62 @@
+// this is a js file
+// Gabriel Pereira dos Santos 
+
+// exercicio 1
+const bool1 = true
+const bool2 = false
+const bool3 = !bool2  /*false*/
+
+let resultado = bool1 && bool2
+console.log("a. ", resultado)  /* false*/
+
+resultado = bool1 && bool2 && bool3
+console.log("b. ", resultado) /* false*/
+
+resultado = !resultado && (bool1 || bool2)
+console.log("c. ", resultado) /* verdadeiro */
+
+console.log("d. ", typeof resultado) /* boolean*/
+
+// exercicio 2
+let primeiroNumero = Number(prompt("Digite um numero!")) /*seria impresso 55 em vez de 10 na soma de 5+5*/
+let segundoNumero = Number(prompt("Digite outro numero!"))/* aonde vai colocar o numero, esta para ser em string entao ele nao ira somar tem que mudar para number*/
+
+const soma = primeiroNumero + segundoNumero
+
+console.log(soma)
+
+
+
+
+// exercicio 1
+
+let ida = Number( prompt("sua idade é?"))
+let idad = Number( prompt("qual a idade do(a) seu melhor amigo(a)?"))
+
+console.log(ida, idad)
+
+maior = ida > idad
+console.log(maior)
+
+// exercicio 2
+let par = Number(prompt("insira um número par"))
+
+console.log(par % 2) /*todos os números pares dao 0 */  /*se inserir um número impar vai aparecer no console em vez do 0 o número 1 */
+
+// exercicio 3
+
+let anos = prompt("quantos anos voce tem?")
+
+console.log(anos * 12)
+console.log(anos * 30)
+console.log(anos * 24)
+
+// exercicio 4
+
+let umNumero = Number(prompt("insira um número"))
+let umNumero2 = Number(prompt("insira outro número"))
+
+console.log(umNumero > umNumero2)
+console.log(umNumero === umNumero2)
+console.log(umNumero % umNumero2)
+console.log(umNumero2 % umNumero)
